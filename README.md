@@ -1,1 +1,1 @@
-"# cn" 
+show running-config | section ospf
