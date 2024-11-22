@@ -1,0 +1,130 @@
+10.0.0.0Router(config-if)#router ospf 1
+Router(config-router)#network 192.168.1.0 
+Router(config-router)#
+Router(config-router)#end
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface Serial0/1/0
+Router(config-if)#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Router(config-if)#router ospf 1
+Router(config-router)#network 192.168.1.0 0.0.0.255 area 1
+Router(config-router)#network 10.0.0.0 0.255.255.255 area 0
+Router(config-router)#exit
+Router(config)#
+Router#
+%SYS-5-CONFIG_I: Configured from console by console
+
+
+
+
+Router>enable
+Router#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#router ospf 1
+Router(config-router)#network 10.0.0.0 0.255.255.255 area 0
+Router(config-router)#
+02:03:45: %OSPF-5-ADJCHG: Process 1, Nbr 192.168.1.1 on Serial0/1/0 from LOADING to FULL, Loading Done
+
+Router(config-router)#network 20.0.0.0 0.255.255.255 area 0
+Router(config-router)#network 30.0.0.0 0.255.255.255 area 0
+Router(config-router)#network 40.0.0.0 0.255.255.255 area 0
+Router(config-router)#exit
+Router(config)#
+
+network 12.0.2.0 0.255.255.255 area 1
+
+Router#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#router ospf 1
+Router(config-router)#network 192.168.2.0 0.0.0.255 area 0
+Router(config-router)#network 20.0.0.0 0.255.255.255 area 0
+Router(config-router)#exit
+Router(config)#
+02:21:34: %OSPF-5-ADJCHG: Process 1, Nbr 30.0.0.1 on Serial0/1/0 from LOADING to FULL, Loading Done
+
+
+
+Router>enable
+Router#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#router ospf 1
+Router(config-router)#network 192.168.3.0 0.0.0.255 area 0
+Router(config-router)#network 30.0.0.0 0.255.255.255 area 0
+Router(config-router)#exit
+02:31:42: %OSPF-5-ADJCHG: Process 1, Nbr 30.0.0.1 on Serial0/1/0 from LOADING to FULL, Loading Done
+
+Router(config)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Router>enable
+Router#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#router ospf 1
+Router(config-router)#network 192.168.4.0 0.0.0.255 area 0
+Router(config-router)#network 50.0.0.0 0.255.255.255 area 0
+Router(config-router)#exit
+Router(config)#
+
+
+
+Router>enable
+Router#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#router ospf 1
+Router(config-router)#network 192.168.5.0 0.0.0.255 area 0
+Router(config-router)#network 60.0.0.0 0.255.255.255 area 0
+Router(config-router)#exit
+Router(config)#
+
+
+
+Router>enable
+Router#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#router ospf 1
+Router(config-router)#network 192.168.6.0 0.0.0.255 area 0
+Router(config-router)#network 70.0.0.0 0.255.255.255 area 0
+Router(config-router)#exit
+Router(config)#
+
+
+Router>enable
+Router#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#ospf 1
+               ^
+% Invalid input detected at '^' marker.
+	
+Router(config)#router ospf 1
+Router(config-router)#network 40.0.0.0 0.255.255.255 area 0
+Router(config-router)#network 40.0.0.0 0.255.255.255 area 0
+03:01:44: %OSPF-5-ADJCHG: Process 1, Nbr 30.0.0.1 on Serial0/0/1 from LOADING to FULL, Loading Done
+
+Router(config-router)#network 40.0.0.0 0.255.255.255 area 0
+Router(config-router)#network 50.0.0.0 0.255.255.255 area 0
+Router(config-router)#network 60.0.0.0 0.255.255.255 area 0
+Router(config-router)#network 60.0.0.0 0.255.255.255 area 0
+03:02:08: %OSPF-5-ADJCHG: Process 1, Nbr 192.168.4.1 on Serial0/1/0 from LOADING to FULL, Loading Done7
+03:02:08: %OSPF-5-ADJCHG: Process 1, Nbr 192.168.5.1 on Serial0/1/network 50.0.0.0 0.255.255.255 area 0
+Router(config-router)#network 60.0.0.0 0.255.255.255 area 0
+Router(config-router)#network 70.0.0.0 0.255.255.255 area 0
+Router(config-router)#exit
+Router(config)#
+Router#
+%SYS-5-CONFIG_I: Configured from console by console
+
+03:02:38: %OSPF-5-ADJCHG: Process 1, Nbr 192.168.6.1 on Serial0/0/0 from LOADING to FULL, Loading Done

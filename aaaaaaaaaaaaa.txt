@@ -1,0 +1,52 @@
+To find a IP address range for each subnet 
+1. The given IP address 221.56.64.0 refers to class C. 
+
+2. The number of 1s in the default mask is 24 in class C. 
+
+3. The requirement is five subnets. This number should be 
+	within the range of power of 2 which comes out to be 
+	23 =8. There should be 3 more 1 in the subnet mask.
+
+4. The total no of 1s in the subnet mask is 24 + 3 = 27 
+
+5. The total no of 0s in the address is 32 – 27 =5, where 
+	32 are the total number of IP address bits and 27 is 
+	the total number of 1s in the address as given in step 4. 
+
+6. The subnet mask in binary notation is denoted 
+	as : 11111111.11111111.11111111.11100000 
+	or 255.255.255.224 in decimal form. 
+7. A number of subnets that can be actually implemented are 8. 
+
+8. The number of addresses in each subnet is 25= 32. Out of which 
+	25-2=30 host addresses are available in each subnet. The address 
+	221.56.64.0 is used as network address and 221.56.64.31 is used 
+	as broadcast address. So, the hosts range 
+	from 221.56.64.1 to 221.56.64.30 
+
+Computer (Subnet I )	Range of Addresses 	221.56.64.0 to 221.56.64.31 
+	Network Address	221.56.64.0 
+	Broadcast Address	221.56.64.31
+	Host Address Range	221.56.64.1 to 221.56.64.30 
+
+AIDS (Subnet II )	Range of Addresses 	221.56.64.32 to 221.56.64.63 
+	Network Address	221.56.64.32 
+	Broadcast Address	221.56.64.63
+	Host Address Range	221.56.64.33 to 221.56.64.62 
+
+AIML (Subnet III )	Range of Addresses 	221.56.64.64 to 221.56.64.95 
+	Network Address	221.56.64.64 
+	Broadcast Address	221.56.64.95
+	Host Address Range	221.56.64.65 to 221.56.64.94 
+
+AI (Subnet IV )	Range of Addresses 	221.56.64.96 to 221.56.64.127 
+	Network Address	221.56.64.96 
+	Broadcast Address	221.56.64.127
+	Host Address Range	221.56.64.97 to 221.56.64.126 
+
+Engineering Science
+(Subnet V )	Range of Addresses 	221.56.64.128 to 221.56.64.159 
+	Network Address	221.56.64.128
+	Broadcast Address	221.56.64.1159
+	Host Address Range	221.56.64.129 to 221.56.64.158 
+
